@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Managemant System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Employee Managemant System</h1>
+
+    <label for="depatmentFilter">Filter by Department:</label>
+    <select name="" id="departmentFilter">
+        <option value="">--Select Department--</option>
+        <option value="hr">HR</option>
+        <option value="finance">Finance</option>
+        <option value="marketing">Marketing</option>
+        <option value="engineering">Engineering</option>
+        <option value="operations">operations</option>
+    </select>
+    <label for="genderFilter">Filter by Department:</label>
+    <select name="" id="genderFilter">
+        <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select>
+
+    <label for="sortSalaryOrder">Sort by Salary</label>
+    <select name="" id="sortOrder">
+        <option value="">--Select Order--</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+    </select>
+    <br>
+    <br>
+    <table id="employeeTable">
+        <thead>
+            <tr>S.No</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Salary</th>
+        </tr>
+        </thead>
+        <tbody id="employeeList">
+            <!-- employee data to be shown here -->
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <div id="pagination">
+        <button id="prevPage">Previous</button>
+        <button id="nextPage">Next</button>
+    </div>
+
+    
+</body>
+</html>
